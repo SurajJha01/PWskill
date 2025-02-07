@@ -1,0 +1,73 @@
+p,
+dt {
+  font-weight: bold;
+}
+
+dl,
+dd {
+  font-size: 0.9rem;
+}
+
+dd {
+  margin-bottom: 1em;
+}
+
+.ollist {
+  counter-increment: ;
+  color: #61665a ;
+  padding: 5px;
+  border-radius: 1px;
+}
+
+/* Q6. Css Started here */
+ 
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+/* ol {
+  list-style-type: none;
+  counter-reset: step-counter;
+  padding-left: 0;
+} */
+ol li {
+  counter-increment: step-counter;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ol li b {
+  font-size: 1.2em;
+  color: #2980b9;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+ol li ol {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+ol li ol li {
+  margin-bottom: 10px;
+}
+
