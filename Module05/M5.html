@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; user-scalable=yes" />
+    <title>Module 5</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="Main-Container">
+    <h1 style="text-align: content;">Assignment Module 5</h1> <br>   
+        <p style="font-size: 25px"><b> Q1 List out the features of HTML5</b></p>
+            <ol>
+                <li>
+                    <b>New Semantic Elements :-</b> < header>, < footer>, < article>, < section>, < aside>, < nav>, < figure>, < figcaption> improve readability and SEO.
+                </li>
+                <li>
+                    <b>Multimedia Support :-</b> Native support for audio and video using < audio> and < video> tags without requiring third-party plugins like Flash.
+                </li>
+                <li>
+                    <b>Canvas and SVG for Graphics :-</b>
+                    <ul>
+                        <li>< canvas> allows drawing graphics and animations via JavaScript.</li>
+                        <li> SVG (Scalable Vector Graphics) enables rendering vector-based graphics.</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Form Enhancements :-</b>
+                    <ul>
+                        <li>New input types: email, date, time, url, number, range, search, tel, color.</li>
+                        <li> Built-in form validation without JavaScript.</li>
+                        <li> Placeholder attribute for input fields.</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Local Storage and Offline Support :-</b>
+                    <ul>
+                        <li>LocalStorage and SessionStorage APIs for storing data on the client-side.</li>
+                        <li>Web SQL Database and IndexedDB for structured data storage.</li>
+                        <li>Application Cache (AppCache) for offline web applications (deprecated in favor of Service Workers).</li>
+                    </ul>
+                </li>
+            </ol>
+<hr>
+        <p style="font-size: 25px"><b> Q2 what are html entites? list out 5 commanly used HTML entites.</b></p>
+        <p> HTML entities are special codes used to represent characters that either have a reserved meaning in HTML (like <, >, and &) or are not easily typed on a keyboard (like © or ®). 
+            They ensure that special characters are displayed correctly in web pages.</p>
+        <Table>
+            <tr>
+                <th>Entity</th>
+                <th>Symbol</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td> &amp;lt; </td>
+                <td> &lt; </td>
+                <td>Less than symbol</td>
+            </tr>
+            <tr>
+                <td>&amp;gt;</td>
+                <td>&gt;</td>
+                <td>Greater than symbol</td>
+            </tr>
+            <tr>
+                <td> &amp;amp; </td>
+                <td> &amp; </td>
+                <td>Ampersand</td>
+            </tr>
+            <tr>
+                <td>&amp;quot;</td>
+                <td>&quot;</td>
+                <td>Double quotation mark</td>
+            </tr>
+            <tr>
+                <td>&amp;apos;</td>
+                <td>&apos;</td>
+                <td>Apostrophe (Single quote)</td>
+            </tr>
+        </Table>
+        <hr>
+        <p style="font-size: 25px"><b>Q3 Define accessibility in the context of web development. Discuss why it's essential to create accessible website and how it benefits different user groups</b></p>
+            <span>
+                <p><B style="font-size: 20px;">Web accessibility</B> refers to designing and developing websites, tools, and technologies in a way that allows people of all abilities, including those with disabilities, to use them effectively. It ensures that all users, including those with visual, auditory, motor, or cognitive impairments, can perceive, understand, navigate, and interact with web content.</p>
+            </span>
+            <ol>
+                <li>
+                <b> Inclusivity & Equal Access </b>
+                Everyone, including individuals with disabilities, should have equal access to digital content and services.
+                </li>
+                <li><b>Legal & Compliance Requirements</b>
+                    Many countries have accessibility laws (e.g., ADA in the U.S., WCAG guidelines, EU Accessibility Act), and non-compliance can lead to legal consequences.
+
+                </li>
+                <li>
+                    <b>Improved User Experience</b> Accessible design often results in better usability for all users, including those with temporary impairments (e.g., a broken arm, poor lighting conditions).
+                </li>
+                <li>
+                    <b>SEO & Business Benefits</b>
+                    <ul>
+                        <li>Search engines favor well-structured, accessible websites, improving SEO rankings.</li>
+                        <li>It increases potential reach, benefiting businesses and organizations.</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Future-Proofing & Compatibility</b>
+                    Accessible sites work better across various devices, including mobile phones, smart speakers, and assistive technologies like screen readers
+                </li>
+            </ol>
+<hr>
+         <p style="font-size: 25px;"><b>Q4. List any 3 ways which helps us in improving the accessibility of HTML</b></p>
+        <ol>
+            <li>
+                <b>Use Semantic HTML Elements</b>
+                <ul>
+                    <li>Semantic tags like <b> &lt;header>, &lt;nav>, &lt;main>, &lt;article>, and &lt;footer>  </b>improve readability and help assistive technologies (e.g., screen readers) understand page structure.</li>
+                    <li><b>Example</b>
+                        <div class="code-container">
+                            <!-- Code Box Header -->
+                            <div class="code-header">
+                                <span>html</span>
+                                <div class="code-buttons">
+                                    <button onclick="copyCode()">📋 Copy</button>
+                                    <button onclick="editCode()">✏️ Edit</button>
+                                </div>
+                            </div>
+                    
+                            <!-- Code Block -->
+                            <pre><code class="language-html" id="codeBlock">
+                    &lt;nav&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/nav&gt;
+                            </code></pre>
+                    
+                            <!-- Copy Notification -->
+                            <div class="copy-notification" id="copyNotification">Copied!</div>
+                        </div>
+                    </li>
+                    <li><b>Benefit :-</b>Helps users navigate the content more efficiently
+                    </li>
+                </ul>
+            </li>
+            <li><b>Add Alternative Text for Images (alt Attribute) :-</b>
+                <ul>
+                    <li>The alt attribute provides a text alternative for images, which is crucial for visually impaired users relying on screen readers.
+                    </li>
+                    <li>
+                        <b>Example</b>
+                            <div class="code-container">
+                                <!-- Code Box Header -->
+                                <div class="code-header">
+                                    <span>html</span>
+                                    <div class="code-buttons">
+                                        <button onclick="copyCode()">📋 Copy</button>
+                                        <button onclick="editCode()">✏️ Edit</button>
+                                    </div>
+                                </div>
+                        
+                                <!-- Code Block -->
+                                <pre><code class="language-html" id="codeBlock">
+                                    &lt;img src="logo.png" alt="Company logo"&gt;
+                                </code></pre>
+                        
+                                <!-- Copy Notification -->
+                                <div class="copy-notification" id="copyNotification">Copied!</div>
+                            </div>
+                    </li>
+                    <li>
+                        <b>Benefit:-</b> Ensures that users who cannot see the image still understand its purpose.
+                    </li>
+                </ul>
+            </li>
+            <li><b>Ensure Keyboard Navigation & Focus Management</b>
+                <ul>
+                    <li>Users should be able to navigate the site without a mouse, using only the keyboard (Tab, Enter, Arrow keys).</li>
+                    <li>Use the tabindex attribute to control focus order and ensure interactive elements (buttons, forms, links) are accessible.</li>
+                    <li><b>Example</b>
+                        <div class="code-container">
+                            <!-- Code Box Header -->
+                            <div class="code-header">
+                                <span>html</span>
+                                <div class="code-buttons">
+                                    <button onclick="copyCode()">📋 Copy</button>
+                                    <button onclick="editCode()">✏️ Edit</button>
+                                </div>
+                            </div>
+                    
+                            <!-- Code Block -->
+                            <pre><code class="language-html" id="codeBlock">
+                            &lt;button tabindex="0"&gt; Button &lt;/button&gt;
+                            </code></pre>
+                    
+                            <!-- Copy Notification -->
+                            <div class="copy-notification" id="copyNotification">Copied!</div>
+                        </div>
+                    </li>
+                    <li>
+                        <b>Benefit:-</b> Helps users with motor impairments or those using assistive devices like screen readers.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+<hr>
+        <p style="font-size: 25px"><b> Q5 what are html entites? list out 5 commanly used HTML entites.</b></p>
+        
+    </div>
+
+   <!-- Prism.js Library for Syntax Highlighting -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script> 
+</body>
+</html>

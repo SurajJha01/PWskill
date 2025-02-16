@@ -1,0 +1,138 @@
+:root {
+    --qfontsize: 25px;
+    --qtextcolor:rgb(23, 6, 39);
+    --ansdivcolor: rgb(244, 255, 242);
+    --anstextcolor: rgb(15, 77, 12);
+    
+
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(195, 194, 238);
+    padding: 25px;
+    box-shadow: 3px 3px 30px rgb(143, 161, 130), -0.2em 0 .4em olive;
+    border-radius: 10px;
+    border: 2px #505050 solid;
+}
+
+body {
+    background-color: #f3f9fa;
+    font-family: "Quicksand", serif;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.Main-Container {
+    /* display: contents;
+    align-items: center;
+    justify-content: center; */
+    background-color: rgb(237, 250, 212);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+th[scope='col'] {
+  background-color: #505050;
+  color: #fff;
+}
+
+th[scope='row'] {
+  background-color: #d6ecd4;
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-of-type(even) {
+  background-color: #e5f398;
+}
+
+table {
+  border-collapse: collapse;
+  border: 3px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+
+/* Code Conatiner Css Starts 
+Fropm here  */
+
+/* Code Block Container */
+.code-container {
+    position: relative;
+    background: #282a36;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #444;
+}
+
+/* Header (HTML label, Copy & Edit buttons) */
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3a3f4b;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.code-header span {
+    font-weight: bold;
+}
+
+/* Copy & Edit Buttons */
+.code-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.code-buttons button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.code-buttons button:hover {
+    opacity: 0.7;
+}
+
+/* Code Styling */
+pre {
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* Copy Notification */
+.copy-notification {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: #4caf50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    display: none;
+}
+
+/* Code Conatiner Css is end here */
