@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form with Custom Colors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Custom Color Palette */
+:root {
+    --primary-color: #4CAF50; /* Green */
+    --secondary-color: #2196F3; /* Blue */
+    --background-light: #f9f9f9;
+    --input-background: #ffffff;
+    --border-color: #ddd;
+    --button-hover: #45a049;
+}
+
+/* Form Container */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    background: var(--background-light);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+.custom-form__title {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* Input Fields */
+.custom-form__input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 16px;
+    background: var(--input-background);
+}
+
+/* Applying Different Background Colors */
+.custom-form__input--primary {
+    background-color: rgba(76, 175, 80, 0.1); /* Light green */
+}
+
+.custom-form__input--secondary {
+    background-color: rgba(33, 150, 243, 0.1); /* Light blue */
+}
+
+.custom-form__input--dropdown {
+    background-color: rgba(255, 193, 7, 0.1); /* Light yellow */
+}
+
+/* Form Section with Opacity */
+.custom-form__section--faded {
+    background: rgba(200, 200, 200, 0.3); /* Light gray with 30% opacity */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Checkbox */
+.custom-form__checkbox {
+    margin-right: 5px;
+}
+
+.custom-form__checkbox-label {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Button */
+.custom-form__button {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.custom-form__button:hover {
+    background: var(--button-hover);
+}
+
+</style>
+<body>
+
+    <div class="form-container">
+        <form class="custom-form">
+            <h2 class="custom-form__title">User Registration</h2>
+
+            <!-- Section with Opacity -->
+            <div class="custom-form__section custom-form__section--faded">
+                <label for="name" class="custom-form__label">Full Name</label>
+                <input type="text" id="name" class="custom-form__input custom-form__input--primary" placeholder="Enter your name">
+
+                <label for="email" class="custom-form__label">Email</label>
+                <input type="email" id="email" class="custom-form__input custom-form__input--secondary" placeholder="Enter your email">
+            </div>
+
+            <label for="password" class="custom-form__label">Password</label>
+            <input type="password" id="password" class="custom-form__input custom-form__input--primary" placeholder="Enter your password">
+
+            <label for="dob" class="custom-form__label">Date of Birth</label>
+            <input type="date" id="dob" class="custom-form__input custom-form__input--secondary">
+
+            <label for="gender" class="custom-form__label">Gender</label>
+            <select id="gender" class="custom-form__input custom-form__input--dropdown">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <label class="custom-form__label">Subscribe to Newsletter</label>
+            <input type="checkbox" id="subscribe" class="custom-form__checkbox">
+            <label for="subscribe" class="custom-form__checkbox-label">Yes, keep me updated</label>
+
+            <button type="submit" class="custom-form__button">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>

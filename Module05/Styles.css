@@ -27,7 +27,7 @@ body {
     /* display: contents;
     align-items: center;
     justify-content: center; */
-    background-color: rgb(237, 250, 212);
+    background-color: rgb(212, 250, 235);
     padding: 20px;
     border-radius: 15px;
     border: 2px solid;
@@ -45,7 +45,7 @@ th[scope='col'] {
 }
 
 th[scope='row'] {
-  background-color: #d6ecd4;
+  background-color: #e1d4ec;
 }
 
 td {
@@ -53,7 +53,7 @@ td {
 }
 
 tr:nth-of-type(even) {
-  background-color: #e5f398;
+  background-color: #ccc4da;
 }
 
 table {

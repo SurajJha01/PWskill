@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Block */
+.text-section {
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Element */
+.text-section__paragraph {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Modifiers */
+.text-section__paragraph--primary {
+    font-size: 20px;
+    font-weight: bold;*/
+    color: #333;*/
+}
+
+.text-section__paragraph--secondary {
+    font-size: 16px;
+    color: #777;
+}
+
+.text-section__paragraph--highlighted {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.text-section__paragraph--alert {
+    border: 2px solid red;
+    color: red;
+    font-weight: bold;
+    background-color: #ffe6e6;
+}
+
+
+</style>
+<body>
+
+    <section class="text-section">
+        <p class="text-section__paragraph text-section__paragraph--primary">
+            This is the primary paragraph with bold text and a larger font size.
+        </p>
+
+        <p class="text-section__paragraph text-section__paragraph--secondary">
+            This is a secondary paragraph with a gray color and slightly smaller font.
+        </p>
+
+        <p class="text-section__paragraph text-section__paragraph--highlighted">
+            This paragraph is highlighted with a yellow background.
+        </p>
+
+        <p class="text-section__paragraph text-section__paragraph--alert">
+            This is an alert paragraph with a red border and text.
+        </p>
+    </section>
+
+</body>
+</html>
