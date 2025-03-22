@@ -14,10 +14,13 @@
             background-color: rgb(5, 133, 253);
             color: aliceblue;
             width: 100%;
-            height: 40px;
+            height: 50px;
             display: flex;
-            align-items: center;
+            align-items: start;
+            justify-content: start;
+            gap: 15px;
             padding: 0 20px;
+            padding-top: 10px;
         }
 
         .container a {
@@ -25,21 +28,30 @@
             font-size: 14px;
             text-decoration: none;
             padding: 10px 15px;
-            transition: color 0.3s;
+            transition: all 0.3s;
         }
 
+        /* Different border styles */
+        .home { border: 2px solid white; }
+        .about { border: 2px dashed white; }
+        .contact { border: 2px dotted white; }
+        .blog { border: 2px double white; }
+        .login { border: 2px groove white; }
+
+        /* Hover effect */
         .container a:hover {
+            border-color: #ffcc00;
             color: #ffcc00;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-        <a href="#">Blog</a>
-        <a href="#">Login</a>
+        <a href="#" class="home">Home</a>
+        <a href="#" class="about">About Us</a>
+        <a href="#" class="contact">Contact</a>
+        <a href="#" class="blog">Blog</a>
+        <a href="#" class="login">Login</a>
     </div>
 </body>
 </html>
