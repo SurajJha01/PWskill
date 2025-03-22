@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2-Module7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 350px;
+            background-color: #FFD000;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            
+        }
+
+        .container:hover { color: rgb(131, 127, 121);
+            background-color: #e7f8d4;
+            
+        }
+
+        .green-container:hover {
+            background-color: #e7f8d4;
+        }
+
+        .green-container {
+            background: url('green.avif') no-repeat center;
+            background-size: cover;
+            border-radius: 10px;
+            padding-top: 15px;
+            position: relative;
+        }
+
+        .job-container {
+            background-color: #FFD000;
+            border-radius: 10px;
+            padding: 5px 10px;
+            display: flex;
+            /* font-weight: bold; */
+            margin-bottom: 10px;
+            margin-left: 10px;
+            width: 180px;
+        }
+
+        .logo {
+            width: 80px;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+
+        h2 {
+            color: white;
+            justify-content: start;
+            margin-left: 10px;
+            padding: 0px; 
+            text-align: left;
+        }
+
+        .tagline {
+            color: antiquewhite;
+            font-size: 14px;
+            margin-top: 100px;
+            text-align: left;
+            display: inline;
+            justify-content: start;
+            align-items: start;
+            
+            
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: right;
+            align-items: right;
+        }
+
+        .image-container img {
+            width: 200px;
+            border-radius: 5px;
+            right: 0px;
+        }
+
+        .course-info {
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="green-container">
+            <div class="job-container"><i>Job Assurance Program</i></div>
+            <img src="PW-Skills-Logo.webp" class="logo" alt="PW Skills Logo">
+            <h2>Full Stack <br> Web Development</h2>
+            
+            <div style="display: inline;">
+                <!-- <div>
+                    <p class="tagline">#PWTeachersDay</p>
+                </div> -->
+                
+            <div class="image-container">
+                <p class="tagline">#PWTeachersDay</p>
+                <img src="t.png" alt="Instructor Images">
+            </div>
+        </div>
+
+        
+        </div>
+        <p class="course-info"><b>Course Name:</b> PW Skills Full Stack Web Development</p>
+    </div>
+
+</body>
+</html>
