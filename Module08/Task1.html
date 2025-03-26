@@ -3,63 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Positioning Boxes</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-        .box {
-            width: 50px;
-            height: 50px;
-            position: absolute;
-            text-align: center;
-            line-height: 50px;
-            font-weight: bold;
-            color: white;
-        }
-        #boxA {
-            background-color: red;
-            top: 200px;
-            left: 200px;
-        }
-        #boxB {
-            background-color: blue;
-            top: calc(200px + 25px - 30px);
-            left: calc(200px + 25px - 30px);
-        }
-        #boxC {
-            background-color: green;
-            top: calc(200px + 25px - 30px);
-            left: calc(200px + 25px + 30px);
-        }
-        #boxD {
-            background-color: orange;
-            top: calc(200px + 25px + 30px);
-            left: calc(200px + 25px - 30px);
-        }
-        #boxE {
-            background-color: purple;
-            top: calc(200px + 25px + 30px);
-            left: calc(200px + 25px + 30px);
-        }
-    </style>
+    <title>position</title>
 </head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        /* position: relative; */
+        width: 450px;
+        height: 450px;
+        
+        border: 2px solid black;
+        
+
+    }
+
+    .Box1 {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+        font-size: 25px;
+        margin: 10px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        
+        
+       
+    }
+
+    .Box2 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(217, 255, 127);
+        font-size: 25px;
+        display: inline-block;
+        margin: 10px;
+        text-align: center;
+        position: relative;
+    }
+
+    .Box3 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(146, 112, 240);
+        font-size: 25px;
+        margin: 10px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+    }
+
+    .Box4 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 127, 127);
+        font-size: 25px;
+        margin: 10px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+    }
+
+    .Box5 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(192, 114, 238);
+        font-size: 25px;
+        margin: 10px;
+        text-align: center;
+        position: absolute;
+        top: 110px;
+        left: 110px;
+        z-index: -1;
+        
+    }
+
+    
+    
+</style>
 <body>
     <div class="container">
-        <div id="boxA" class="box">A</div>
-        <div id="boxB" class="box">B</div>
-        <div id="boxC" class="box">C</div>
-        <div id="boxD" class="box">D</div>
-        <div id="boxE" class="box">E</div>
-    </div>
+        <div class="Main1" style="display: inline-block;">
+            <div class="Box1">B</div>
+            <div class="Box2">C</div>
+        </div>
+        <br>
+        <div class="Main2" style="display: inline-block;">
+            <div class="Box3">D</div>
+            <div class="Box4">E</div>
+        </div>
+            <div class="Box5">A</div>
+    </div>    
 </body>
 </html>
